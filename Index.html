@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de registro</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="#" method="get">
+		<h1 style="text-align: center">Formulario de registro</h1>
+		<fieldset>
+			<legend> Contacto</legend>
+			<fieldset>
+				<legend>Personal</legend>
+				<label for="Nombre">Nombre</label>
+				<input type="text" name="Nombre" id="Nombre" placeholder="Nombre" pattern="[a-zA-Z]+" title="No se puede ingresar numeros" required>
+				<label for="Fecha Nacimiento">Fecha Nacimiento</label>
+				<input type="date" name="Fecha Nacimiento" id="Fecha Nacimiento" min="1970-01-01" max="2000-12-31" required>
+				<label for="AF">Animal Favorito</label>
+				<input type="text" name="AF" id="AF" placeholder="Animal Favorito" pattern="[a-zA-Z]+" title="No se pueden ingresar Numeros" required>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend>Cuenta</legend>
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" placeholder="asdgasd@hotmail.com" pattern="[a-zA-Z]+@[a-zA-Z]+.[a-zA-Z]+" title="Debe seguir el formato AAAAA@AAAAA.AAA" required>
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+				<label for="VP">Verificar contraseña</label>
+				<input type="password" name="VP" id="VP" placeholder="Contraseña" required>
+
+
+
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend>Contacto</legend>
+				<label for="direccion">Direccion</label>
+				<textarea placeholder="Direccion" style="width: 100%"></textarea>
+				<br>
+				<label for="Ciudad">Ciudad</label>
+				<input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required>
+				<label for="Pais">Pais</label>
+				<input type="text" name="Pais" id="Pais" placeholder="Pais" required>
+				<label for="Telefono">Telefono</label>
+				<input type="tel" name="Telefono" id="Telefono" placeholder="Telefono" required>
+			</fieldset>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+		</fieldset>
+	</form>
+	<script src="Scripts/main.js"></script>
+</body>
+</html>
